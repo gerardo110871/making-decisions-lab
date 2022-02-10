@@ -62,7 +62,7 @@ let rain = true
 //CODE HERE
 if (temperature >= 55 && rain === false) {
   console.log ("You should wear shorts and a T-shirt.")
-} else if (temperature <= 55 && rain === false) {
+} else if (temperature < 55 && rain === false) {
   console.log("Wear a jacket.")
 } else if(temperature >= 80 && rain === true) {
   console.log("one should wear a t-shirt and take an umbrella")
@@ -141,7 +141,13 @@ if (changeMyMind === true) {
 // Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
 
 //CODE HERE
+let changeMyMind = true;
 
+if (changeMyMind !== true) {
+  console.log("false")
+} else {
+  console.log("true")
+}
 
 
 ////////// ADVANCED PROBLEMS //////////
@@ -158,5 +164,5 @@ while(z > 0) {
   for(i = z; i > 0; i--){
   console.log(i)
   } 
-  z--;
+  z++;
 }
